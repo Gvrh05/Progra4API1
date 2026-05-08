@@ -9,10 +9,11 @@ var app = builder.Build();
 builder.Services.AddSwaggerGen();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+//if (app.Environment.IsDevelopment())
+//{
+//    
+//}
+app.MapOpenApi();
 app.UseSwagger();
 app.UseSwaggerUI();
 //cambio
